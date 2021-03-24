@@ -192,7 +192,7 @@ a {
 
 #values {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin: 80px auto;
 }
 
@@ -340,6 +340,7 @@ hr {
 
 .grid-img {
   width: 100%;
+  height: 300px;
 }
 
 .grid-img img {
@@ -377,7 +378,7 @@ hr {
 #team {
   width: 100%;
   height: auto;
-  margin: 80px auto;
+  margin: 120px auto;
 }
 
 .team-display {
@@ -390,7 +391,7 @@ hr {
 .member {
   width: 200px;
   height: 300px;
-  margin: 30px 10px;
+  margin: 30px 20px;
   text-align: center;
 }
 
@@ -440,7 +441,7 @@ hr {
 
 #reviews {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin: 80px auto;
 }
 
@@ -503,7 +504,7 @@ hr {
 
 #contact {
   width: 100%;
-  height: auto;
+  height: 100vh;
   margin: 0;
   position: relative;
 }
@@ -553,7 +554,7 @@ hr {
 }
 
 .contact-info h5 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: var(--opacity-mustard);
   text-transform: capitalize;
   margin-bottom: 3rem;
@@ -593,6 +594,8 @@ hr {
   font-weight: 200;
 }
 
+/* google maps */
+
 .google-map {
   width: 100%;
 }
@@ -601,6 +604,7 @@ hr {
   color: var(--light-gray);
   font-weight: 300;
   margin: 1rem 0 1.5rem;
+  text-transform: uppercase;
 }
 
 .google-map h4 i {
@@ -608,25 +612,55 @@ hr {
 }
 
 .google-map iframe {
-  width: 80%;
-  height: 300px;
+  width: 75%;
+  height: 330px;
 }
+
+/* contact form */
 
 .form-container {
   background-color: #f5f5f573;
   width: 40%;
-  height: 400px;
-  text-align: center;
+  height: auto;
   padding: 25px;
 }
 
 .form-container h4 {
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-/* google maps */
+label {
+  text-align: left;
+  text-transform: capitalize;
+}
 
-/* contact form */
+input[type="text"] {
+  color: var(--dark-gray);
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--mustard);
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  margin: 0.5rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--mustard);
+}
+
+textarea:focus {
+  outline: none;
+}
 
 /* RESPONSIVE STYLE */
 
@@ -724,6 +758,20 @@ hr {
     display: none;
   }
   /*  */
+
+  #values {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  /*  */
+  #practices {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
+
   .main-info {
     display: flex;
     justify-content: center;
@@ -764,6 +812,18 @@ hr {
 
   /*  */
 
+  #team {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
+
+  /*  */
+  #reviews {
+    width: 100%;
+    height: auto;
+    margin: 40px auto;
+  }
   .client {
     width: 100%;
     height: 100%;
@@ -771,6 +831,10 @@ hr {
   }
 
   /*  */
+
+  #contact {
+    height: auto;
+  }
 
   .container {
     display: flex;
@@ -809,7 +873,7 @@ hr {
   .form-container {
     background-color: #f5f5f573;
     width: 100%;
-    height: 400px;
+    height: auto;
     text-align: center;
     padding: 25px;
     margin-top: 2.5rem;
