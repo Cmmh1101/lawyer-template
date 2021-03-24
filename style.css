@@ -503,14 +503,14 @@ hr {
 
 #contact {
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin: 0;
   position: relative;
 }
 
 .contact-img {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-blend-mode: overlay;
   background-image: url(/img/lawbuilding.jpg);
   background-position: center;
@@ -525,7 +525,7 @@ hr {
 
 .contact-overlay {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: rgb(154, 93, 3);
   background: linear-gradient(
     0deg,
@@ -542,7 +542,7 @@ hr {
 .container {
   display: flex;
   justify-content: left;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: wrap;
   padding: 100px;
 }
@@ -553,7 +553,7 @@ hr {
 }
 
 .contact-info h5 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: var(--opacity-mustard);
   text-transform: capitalize;
   margin-bottom: 3rem;
@@ -564,6 +564,20 @@ hr {
   justify-content: left;
   align-items: center;
   flex-flow: wrap;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  flex-flow: wrap;
+  width: 50%;
+  margin: 1rem 0;
+}
+
+.contact-box i {
+  color: var(--light-gray);
+  padding-right: 15px;
 }
 
 .info-details h6 {
@@ -578,6 +592,41 @@ hr {
   color: var(--light-gray);
   font-weight: 200;
 }
+
+.google-map {
+  width: 100%;
+}
+
+.google-map h4 {
+  color: var(--light-gray);
+  font-weight: 300;
+  margin: 1rem 0 1.5rem;
+}
+
+.google-map h4 i {
+  padding-right: 15px;
+}
+
+.google-map iframe {
+  width: 80%;
+  height: 300px;
+}
+
+.form-container {
+  background-color: #f5f5f573;
+  width: 40%;
+  height: 400px;
+  text-align: center;
+  padding: 25px;
+}
+
+.form-container h4 {
+  text-transform: uppercase;
+}
+
+/* google maps */
+
+/* contact form */
 
 /* RESPONSIVE STYLE */
 
@@ -719,6 +768,55 @@ hr {
     width: 100%;
     height: 100%;
     margin: 15px;
+  }
+
+  /*  */
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    padding: 20px;
+  }
+
+  .contact-info {
+    width: 100%;
+    height: auto;
+  }
+
+  /*  */
+
+  .google-map {
+    width: 100%;
+  }
+
+  .google-map h4 {
+    color: var(--light-gray);
+    font-weight: 300;
+    margin: 1rem 0 1.5rem;
+  }
+
+  .google-map h4 i {
+    padding-right: 15px;
+  }
+
+  .google-map iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .form-container {
+    background-color: #f5f5f573;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 25px;
+    margin-top: 2.5rem;
+  }
+
+  .form-container h4 {
+    text-transform: uppercase;
   }
 }
 
