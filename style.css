@@ -46,7 +46,7 @@ body {
 
 .hero-img {
   width: 100%;
-  height: 85vh;
+  height: 100%;
   background-blend-mode: overlay;
   background-image: url(/img/edif.jpg);
   background-position: center;
@@ -61,7 +61,7 @@ body {
 
 .hero-overlay {
   width: 100%;
-  height: 85vh;
+  height: 100%;
   background-color: #292929d5;
   position: absolute;
   top: 0;
@@ -127,14 +127,18 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -245px;
-  padding: 0 5%;
+  /* position: absolute; */
+  /* bottom: -2%; */
+  /* left: 15%; */
+  /* margin-right: 15%; */
+  margin-top: -80px;
+  /* padding: 0 5%; */
 }
 
 .boxes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-template-columns: 250px 250px 250px 250px; */
+
   gap: 30px;
   margin: 0 auto;
 }
@@ -144,30 +148,26 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--mustard);
-  padding: 30px 10px;
-}
-
-.title-box:hover {
-  background-color: var(--opacity-mustard);
+  padding: 10px;
 }
 
 .title-box i {
-  font-size: 2rem;
-  color: var(--light-gray);
+  font-size: 1rem;
+  color: var(--opacity-mustard);
   filter: drop-shadow(3px 3px 1px grey);
   font-weight: 600;
 }
 
 .title-box .sub-title {
-  color: var(--light-gray);
-  font-size: 1.2rem;
+  color: var(--opacity-mustard);
+  font-size: 1rem;
   font-weight: 300;
   text-shadow: 2px 2px 3px grey;
   margin-left: 10px;
 }
 
 .info-box {
+  display: none;
   background-color: #fff;
   padding: 30px;
   height: 220px;
@@ -504,7 +504,7 @@ hr {
 
 #contact {
   width: 100%;
-  height: 100vh;
+  height: auto;
   margin: 0;
   position: relative;
 }
@@ -545,7 +545,7 @@ hr {
   justify-content: left;
   align-items: flex-start;
   flex-flow: wrap;
-  padding: 100px;
+  padding: 70px;
 }
 
 .contact-info {
@@ -664,8 +664,17 @@ textarea:focus {
 
 /* RESPONSIVE STYLE */
 
-@media (max-width: 992px) {
-}
+/* @media (max-width: 992px) {
+  .grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2%;
+    left: 10%;
+    margin-right: 10%;
+  }
+} */
 
 @media (max-width: 768px) {
   /* .hero-img {
@@ -678,7 +687,7 @@ textarea:focus {
     height: 100vh;
   } */
   .hero-text {
-    margin-top: -250px;
+    margin-top: -100px;
   }
 
   .span-upper {
@@ -718,10 +727,17 @@ textarea:focus {
     text-decoration: none;
     font-weight: 200;
   }
-
-  .grid-wrapper {
-    margin-top: -215px;
-    padding: 0 5%;
+  /* .grid-wrapper {
+    display: none;
+  } */
+  /* .grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 2%;
+    margin-right: 5%;
   }
 
   .boxes {
@@ -756,7 +772,7 @@ textarea:focus {
   }
   .info-box {
     display: none;
-  }
+  } */
   /*  */
 
   #values {
@@ -888,16 +904,19 @@ textarea:focus {
 
 @media (max-width: 538px) {
   .grid-wrapper {
+    display: none;
+  }
+  /* .grid-wrapper {
     margin-top: -305px;
     padding: 0 5%;
-  }
+  } */
 
-  .boxes {
+  /* .boxes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     margin: 0 auto;
-  }
+  } */
 
   .practices-grid {
     display: grid;
