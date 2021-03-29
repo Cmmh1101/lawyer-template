@@ -8,7 +8,7 @@ gsap.from(".pract-box", {duration: 4, opacity: 0, scale: 0.5, delay: 5});
 ScrollReveal().reveal('#hero');
 ScrollReveal().reveal('#values', { delay: 500 });
 ScrollReveal().reveal('#practices', { delay: 500 });
-ScrollReveal().reveal('.pract-box', { delay: 800 });
+ScrollReveal().reveal('.pract-box', { delay: 1000 });
 // ScrollReveal().reveal('.box2', { delay: 1100 });
 // ScrollReveal().reveal('.box3', { delay: 1400 });
 // ScrollReveal().reveal('.box4', { delay: 1700 });
